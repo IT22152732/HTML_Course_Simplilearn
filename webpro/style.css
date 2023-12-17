@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css?family=Allural|Josefin+Sans")
+body{
+    line-height: 1.5;
+    font-family:'Poppins', snas-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: Josefin Sans , sans-serif;
+
+}
+
+p{
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5F8E8E;
+
+}
+
+h1.title{
+margin-bottom: 20px;
+color: orange;
+font-family: 'Allura' , 'cursive';
+text-transform: uppercase;
+font-size: 38px;
+word-spacing: 25px;
+letter-spacing: 5px;
+}
+
+.btn a{
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    border: 2px solid black;
+    color: red;
+    display: block;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+.main_container{
+    position: relative;
+
+}
+
+.navbar{
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.logo a{
+    font-family: 'Allura' , 'cursive';
+    font-size: 32px;
+    color: red;
+
+}
+
+.navbar_items ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.navbar_items ul li{
+    float: left;
+    width: 100px;
+    height: 40px;
+    background-color: lightsalmon;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+
+
+
+}
+
+
+.navbar_items ul li a{
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.navbar_items ul li a:hover{
+    background-color: tomato;
+}
+
+.navbar_items ul li a:after{
+    background-color:white;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50%;
+    width: 100%;
+    height: 2px;
+    transition: transform 250ms;
+
+}
+
+
+.navbar_items ul li a:hover:after{
+    transform: translateX(-50%) scaleX(1.0);
+}
+
+.navbar_items ul li ul li{
+    display: none;
+
+}
+
+.navbar_items ul li:hover ul li{
+    display: block;
+}
+
+.banner_content{
+    text-align: cebter;
+    color: whitesmoke;
+}
+
+.banner_content h1{
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 15px;
+
+}
+.banner_content h1 span{
+    color: tomato;
+}
+
+.banner_image{
+    background: url("images/1.jpeg") ;
+    background-size: cover;
+    width: 100%;
+    height: 600%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about,
+.services,
+.contactus,
+.ourteam{
+    text-align: center;
+    padding: 5% 10%;
+}
+.services{
+    background: whitesmoke;
+}
+.diff_services{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.diff_services .diff_services_item{
+    width: 30%;
+}
+.diff_services .diff_services_item img{
+    width: 100%;
+    margin-bottom: 25px;
+
+}
+.diff_services .diff_services_item{
+    color: tomato;
+    margin-bottom: 15px;
+}
+.form_wrapper .form_input{
+    margin-bottom: 15px;
+
+}
+.form_wrapper .form_input textarea{
+    width: 250px;
+    padding: 12px 20px;
+    height: 80px;
+    resize: none;
+    border: 1px solid white;
+}
+.form_wrapper .form_input input[type="text"]{
+    width: 250px;
+    padding: 12px 20px;
+    
+    border: 1px solid black;
+}
+
+.ourteam{
+    background: whitesmoke;
+
+}
+.ourteam_wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+.ourteam_wrapper .team{
+    display: flex;
+    justify-content: space-between;
+}
+.ourteam_wrapper .team_members{
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+}
+.ourteam_wrapper .team_members img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.ourteam_wrapper .team_members:hover img{
+    transform: scal(1.1);
+
+}
+
+.contaner{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+@media(max-width: 720px){
+    .navbar{
+        height: auto;
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 25px;
+    }
+    .navbar_items ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar_items ul li{
+        margin-bottom: 5px;
+    }
+    .banner_content{
+        margin-top: 35px;
+    }
+}
+
+.footer1{
+    width: 100%;
+    text-align: center;
+    background: black;
+    padding: 20px 0;
+}
+.footer1 a{
+    color:#fff
+}
+.arrow{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background: #fb2274;
+    border-radius: 50%;
+    display: none;
+
+}
+.arrow img{
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+
